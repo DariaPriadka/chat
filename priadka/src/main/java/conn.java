@@ -33,7 +33,8 @@ public class conn {
     // --------Заполнение таблицы--------
     public static void WriteDB() throws SQLException
     {
-
+        statmt.execute("INSERT INTO 'users' ('name') VALUES ('Igor'); ");
+        statmt.execute("INSERT INTO 'messages' ('user', 'message', 'date') VALUES ('1', 'Privet', 'jan 1 2009 13:22:15'); ");
     }
 
     // -------- Вывод таблицы--------
